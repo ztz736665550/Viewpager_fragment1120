@@ -9,16 +9,15 @@ import android.view.ViewGroup;
 
 import com.ztz.viewpager_fragment1120.R;
 
-
 /**
  * Created by TR on 2017/11/20.
  */
 
-public class fragmentHome extends Fragment {
+public class FragmentMy extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home_layout, container, false);
+        View view = inflater.inflate(R.layout.fragment_my_layout, container, false);
 
         return view;
     }

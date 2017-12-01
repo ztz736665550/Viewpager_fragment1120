@@ -13,7 +13,7 @@ import com.ztz.viewpager_fragment1120.R;
  * Created by TR on 2017/11/20.
  */
 
-public class fragmentShop extends Fragment {
+public class FragmentShop extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

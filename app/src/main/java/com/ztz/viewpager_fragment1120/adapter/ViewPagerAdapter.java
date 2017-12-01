@@ -1,4 +1,4 @@
-package com.ztz.viewpager_fragment1120;
+package com.ztz.viewpager_fragment1120.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * Created by TR on 2017/11/20.
  */
 
-class ViewPagerAdapter extends FragmentPagerAdapter {
+public class ViewPagerAdapter extends FragmentPagerAdapter {
     ArrayList<Fragment> list;
     FragmentManager fm;
     public ViewPagerAdapter(ArrayList<Fragment> list, FragmentManager fm) {
@@ -30,10 +30,4 @@ class ViewPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         return list.get(position);
     }
-    //这个方法要注释
-    /*@Override
-    public boolean isViewFromObject(View view, Object object) {
-        boolean b = view == object;
-        return b;
-    }*/
 }

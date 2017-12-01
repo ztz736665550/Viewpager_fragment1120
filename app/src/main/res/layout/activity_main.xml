@@ -16,49 +16,46 @@
     <RadioGroup
         android:id="@+id/radio_group"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:orientation="horizontal"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:background="#ffa">
+<!--android:background="@drawable/home"-->
         <RadioButton
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:id="@+id/radio_btn_home"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:background="@drawable/home"
             android:button="@null"
-            android:gravity="center"/>
+            android:drawableTop="@drawable/home"
+            android:gravity="center"
+            android:text="首页" />
         <RadioButton
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:id="@+id/radio_btn_video"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@drawable/video"
+            android:drawableTop="@drawable/video"
             android:layout_height="match_parent"
-            android:button="@null"/>
+            android:button="@null"
+            android:text="分类"/>
         <RadioButton
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:id="@+id/radio_btn_shop"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@drawable/shop"
+            android:drawableTop="@drawable/shop"
             android:layout_height="match_parent"
-            android:button="@null"/>
+            android:button="@null"
+            android:text="发现"/>
         <RadioButton
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
             android:id="@+id/radio_btn_my"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:background="@drawable/my"
+            android:drawableTop="@drawable/my"
             android:layout_height="match_parent"
-            android:button="@null"/>
+            android:button="@null"
+            android:text="购物车"/>
     </RadioGroup>
-
 </RelativeLayout>

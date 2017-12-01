@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="home"/>
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#01000000">
+        <RadioButton
+            android:id="@+id/radio_btn_sys"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/erweima"
+            android:gravity="center"
+            android:text="扫一扫"
+            android:layout_marginTop="2dp"/>
+        <EditText
+            android:id="@+id/edit_text_sousuo"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:hint="请输入搜索的商品"/>
+        <RadioButton
+            android:id="@+id/radio_btn_xiaoxi"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/xiaoxi"
+            android:gravity="center"
+            android:text="消息"
+            android:layout_marginTop="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <com.youth.banner.Banner
+            android:id="@+id/banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.youth.banner.Banner>
+
+    </LinearLayout>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/springview_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
 </LinearLayout>
